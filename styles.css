@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.container {
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: mediumaquamarine;
+    transform-style: preserve-3d;
+    /* height: 600px; */
+    width: 50%;
+    border-radius: 30px;
+    box-shadow: 0 20px 20px rgb(0,0,0,0.2),0 0 50px  rgb(0,0 ,0,0.2);
+}
+
+.container .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem auto;
+}
+
+.container .image .circle {
+    width: 10rem;
+    height: 10rem;
+    background-color: lightgray;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(
+        to right,
+        rgba(245,70,66,0.75),
+        rgba(8,83,156,0.75)
+    );
+    z-index: 0;
+}
+
+.container .image img{
+    width: 12rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.content {
+    margin: auto;
+}
+
+.content .heading {
+    font-weight: 900;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.content .para {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.button button {
+    width: 50px;
+    text-align: center;
+    border: none;
+    background: white;
+    color: grey;
+    border-radius: 30px;
+    padding: 0.3rem;
+    box-shadow: 0px 5px 10px 0px rgb(0,0 ,0,0.2);
+}
+
+.button .active {
+    background: grey;
+    color: white;
+}
+
+.purchase {
+    text-align: center;
+}
+
+.purchase button {
+    width: 80%;
+    border-radius: 30px;
+    padding: 0.5rem 2rem;
+    background:lightsalmon;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    margin: 1rem auto 2.5rem;
+}
+
+.sneaker {
+    transition: all 0.5s ease-in;
+}
+
